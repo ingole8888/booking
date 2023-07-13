@@ -11,10 +11,9 @@ export const Train = () => {
   const [message,setMassage]=useState("Book only 7 seats")
   const [loading,setLoading]=useState(null)
 
-  const url='http://localhost:8080/train'
+  const url='https://ticketbooking-wl8g.onrender.com/train'
   let seats;
   const BookSeats = async () => {
-    
     setLoading(true)       
     axios
         .post(url, { numSeats: +value })
