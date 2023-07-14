@@ -30,7 +30,7 @@ export const Train = () => {
  
   useEffect(() => {
     axios.get(url).then((res) => {
-      // setArray(res.data.coach.seats);
+      setArray(res.data.coach.seats);
       setChange(!change);
     });
   }, [change]);
@@ -145,16 +145,16 @@ export const Train = () => {
             </Stack>
             <Grid
               templateColumns="repeat(7, 1fr)"
-              gap={4}
+              gap={2}
               mt="4%"
               ml={["0", "0", "5%", "5%"]}
             >
               {arr.map((el, i) => {
-                const color = el.isBooked ? "red" : "green";
+                const color = el.isBooked ? "white" : "gray";
                 return (
                   <Stack textAlign={"start"} key={i}>
-                    <MdChair style={{ color: color, fontSize: "1.5rem" }} />
-                    <Text fontWeight={"600"}>{i + 1}</Text>
+                    <MdChair style={{ color: color, fontSize: "1rem" }} />
+                    <Text fontWeight={"300"}>{i + 1}</Text>
                   </Stack>
                 );
               })}
