@@ -135,11 +135,11 @@ export const Train = () => {
               mt={["5%", "5%", "0", "0"]}
             >
               <Flex justify={"space-around"} gap={"5%"} align={"center"}>
-                <MdChair style={{ color: "green", fontSize: "2rem" }} />
+                <MdChair style={{ color: "green", fontSize: "1rem" }} />
                 <Text>Available</Text>
               </Flex>
               <Flex justify={"space-around"} gap={"5%"} align={"center"}>
-                <MdChair style={{ color: "red", fontSize: "2rem" }} />
+                <MdChair style={{ color: "red", fontSize: "1rem" }} />
                 <Text>Booked</Text>
               </Flex>
             </Stack>
