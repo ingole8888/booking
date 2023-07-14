@@ -64,18 +64,18 @@ export const Train = () => {
                 fontSize={["1rem", "1.2rem"]}
                 textAlign={"start"}
               >
-                <Text color={"red.200"}>Train Number: 111213</Text>
+                <Text>Train Number: 111213</Text>
               </Box>
             </Stack>
             <Stack className="input" justify={"start"} mt="5%">
-              <Text color="red" display={display ? "block" : "none"}>
+              <Text color="black" display={display ? "block" : "none"}>
                 {message}
               </Text>
               <Input
                 maxW={"90%"}
                 margin={"auto"}
-                placeholder="Enter number of seats you want to book"
-                border={"1px solid gray"}
+                placeholder="Enter number of seats "
+                border={"2px solid black"}
                 mt={"3%"}
                 mr={["0%", "0%", "5%", "5%"]}
                 type="number"
@@ -95,11 +95,11 @@ export const Train = () => {
               <Box mt="3%">
                 <Button
                   color={"white"}
-                  bg={"green"}
+                  bg={"gray"}
                   p="1% 3%"
                   _hover={{
-                    color: "#fff",
-                    backgroundColor: "green",
+                    color: "#ffff",
+                    backgroundColor: "gray",
                   }}
                   mr={"5%"}
                   onClick={BookSeats}
